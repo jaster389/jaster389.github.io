@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabel Kalender Siklus 12 Zodiak Timur 2026 &amp; Konverter Deret Modulo-12</title>
+<meta name="description" content="Konverter tahun kelahiran ke siklus 12 simbol kalender lunar 2026 (Tahun Kuda Api) lengkap dengan matriks barisan aritmetika modulo-12 dan rujukan simbol.">
+<link rel="canonical" href="https://jaster389.github.io/">
+<link rel="alternate" type="application/rss+xml" title="RSS Pustaka Kalender &amp; Matriks Numerik" href="https://jaster389.github.io/rss.xml">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Pustaka Terbuka Kalender Siklus Lunar 2026 & Komputasi Numerik Nusantara", "url": "https://jaster389.github.io/", "inLanguage": "id-ID", "datePublished": "2026-11-15", "dateModified": "2026-11-15"}</script>
+<style>
+:root{--bg:#fffbeb;--card:#ffffff;--ink:#1e293b;--pri:#b45309;--pri-d:#78350f;--line:#fde68a}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:24px 16px 56px}
+header{background:linear-gradient(135deg,#7c2d12 0%,#b45309 100%);color:#fff;padding:28px 24px;border-radius:18px;margin-bottom:22px;box-shadow:0 12px 28px rgba(124,45,18,.14)}
+.badge{display:inline-block;background:rgba(255,255,255,.16);padding:4px 12px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:10px}
+h1{margin:0 0 8px;font-size:clamp(22px,3.5vw,31px);line-height:1.25}
+nav{margin-top:16px;display:flex;gap:10px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;font-size:13.5px;font-weight:600;background:rgba(255,255,255,.15);padding:7px 14px;border-radius:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:18px;box-shadow:0 2px 10px rgba(124,45,18,.04)}
+h2{margin:0 0 12px;font-size:19px;color:var(--pri-d)}
+input{padding:10px 13px;font-size:16px;border:1.5px solid #fcd34d;border-radius:10px;width:210px;max-width:100%}
+button{padding:10px 16px;font-size:14.5px;font-weight:700;background:var(--pri);color:#fff;border:0;border-radius:10px;cursor:pointer}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:12px}
+th,td{border:1px solid #fef3c7;padding:9px 10px;text-align:left}
+th{background:#fffbeb;color:var(--pri-d)}
+a{color:var(--pri);font-weight:600}
+footer{margin-top:26px;padding-top:16px;border-top:1px solid #fde68a;font-size:13px;color:#64748b;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">PUSTAKA OPEN-SOURCE MIT &bull; KALENDER &amp; DERET ARITMETIKA</span>
+    <h1>Tabel Siklus 12 Zodiak Timur 2026 &amp; Konverter Barisan Modulo-12</h1>
+    <p style="margin:0;color:#fef3c7">Dokumentasi terbuka untuk memetakan tahun kalender Masehi ke rotasi 12 simbol tahunan beserta susunan deret angka berselisih 12 pada Tahun Kuda Api 2026.</p>
+    <nav>
+      <a href="https://jaster389.github.io/">Tabel &amp; Konverter 2026</a>
+      <a href="https://jaster389.github.io/visualisasi-matriks-frekuensi/">Heatmap Matriks 4-Digit</a>
+      <a href="https://jaster389.github.io/rss.xml">RSS Feed</a>
+    </nav>
+  </header>
+
+  <section class="card" aria-labelledby="j-konv">
+    <h2 id="j-konv">1. Konverter Tahun Masehi ke Siklus 12 Simbol</h2>
+    <label for="yr" style="display:block;font-weight:600;margin-bottom:6px">Masukkan Tahun Kelahiran / Pengamatan (1924&ndash;2080):</label>
+    <input id="yr" type="number" min="1900" max="2100" value="2026">
+    <button type="button" onclick="cekTahun()">Hitung Siklus</button>
+    <p id="yr-out" style="font-weight:700;color:#7c2d12;margin:12px 0 0"></p>
+  </section>
+
+  <article class="card">
+    <h2>2. Matriks Barisan Aritmetika Modulo-12 Tahun 2026</h2>
+    <p>Dalam sistem penanggalan lunar berulang dua belas tahunan, setiap pergantian tahun Imlek menggeser titik awal barisan aritmetika <code>a + 12k</code> sebanyak satu posisi. Sepanjang tahun 2026 (siklus Kuda Api), urutan pertama ditempati oleh simbol <strong>Kuda</strong> diikuti sebelas simbol berikutnya secara berkesinambungan.</p>
+    <table id="tbl-z">
+      <thead><tr><th>Urutan 2026</th><th>Simbol Kalender</th><th>Anggota Barisan Modulo-12 (01&ndash;00)</th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <p style="margin-top:16px">Apabila Anda membutuhkan penjabaran rinci per simbol beserta padanan elemen tahun berjalan, silakan rujuk <a href="https://tamwong.com/tabel-shio" rel="dofollow">referensi tabel shio 2026 lengkap dan urutan angka JagoData</a>. Untuk menelusuri korespondensi indeks klasifikasi dua digit dari <code>00</code> hingga <code>99</code>, tersedia pula indeks terstruktur pada <a href="https://tamwong.com/buku-mimpi" rel="dofollow">ensiklopedia buku tafsir simbol angka 00-99 JagoData</a>.</p>
+    <p>Kami juga menyediakan modul visualisasi kepadatan kemunculan digit empat posisi secara terbuka di halaman <a href="https://jaster389.github.io/visualisasi-matriks-frekuensi/">Generator Peta Warna (Heatmap) Matriks 4-Digit</a>.</p>
+  </article>
+
+  <footer>
+    <span>&copy; 2026 Pustaka Komputasi Kalender &amp; Numerik Terbuka (MIT License)</span>
+    <span><a href="https://jaster389.github.io/sitemap.xml">Sitemap XML</a> &bull; <a href="https://jaster389.github.io/rss.xml">RSS 2.0</a></span>
+  </footer>
+</div>
+<script>
+var NAMES=["Kuda","Kambing","Monyet","Ayam","Anjing","Babi","Tikus","Kerbau","Macan","Kelinci","Naga","Ular"];
+var RING12=["Monyet","Ayam","Anjing","Babi","Tikus","Kerbau","Macan","Kelinci","Naga","Ular","Kuda","Kambing"];
+function cekTahun(){
+  var y=parseInt(document.getElementById('yr').value||'2026',10);
+  var sym=RING12[((y%12)+12)%12];
+  document.getElementById('yr-out').textContent='Tahun '+y+' berkorespondensi dengan simbol siklus: '+sym;
+}
+(function renderTbl(){
+  var tb=document.querySelector('#tbl-z tbody'), html='';
+  for(var i=0;i<12;i++){
+    var nums=[];
+    for(var n=i+1;n<=100;n+=12) nums.push(String(n%100).padStart(2,'0'));
+    html+='<tr><td>#'+(i+1)+'</td><td><strong>'+NAMES[i]+'</strong></td><td>'+nums.join(', ')+'</td></tr>';
+  }
+  tb.innerHTML=html;
+  cekTahun();
+})();
+</script>
+</body>
+</html>
